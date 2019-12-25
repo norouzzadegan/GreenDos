@@ -23,6 +23,8 @@ you can see help
 -p|--port select espisific port if no set scan all port
 -d|--domain set your domain
 -i|--ip set your ip
+-f|--flood set Number of packet you want to send
+-r|--range set range of port scan and format is 1-8080
 usage:
 ./dos.sh -d domain.com
 ```
