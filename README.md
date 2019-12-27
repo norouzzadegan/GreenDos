@@ -1,4 +1,4 @@
-## DOS To DDOS
+## GreenDos a tools convert Dos to Ddos
 This tool is developed for checking services against a DDOS attack.
  
 We will talk about the algorithm in detailed. The algorithm has 4 main steps as follow:
@@ -14,14 +14,14 @@ step 4) For the last step it will send packets from randomly generated source IP
 For using this tool for your services, you need to install the followings:
 
 ```
-git clone https://gitlab.com/greenmns/dos-to-ddos.git
-cd dos-to-ddos
-chmod +x ddos.sh
-./ddos
+git clone https://gitlab.com/greenmns/GreenDos.git
+cd GreenDos
+chmod +x GreenDos.sh
 ```
 you can see help
 
 ```
+$./GreenDos.sh
 -h|--help show help
 -p|--port select espisific port if no set scan all port
 -d|--domain set your domain
