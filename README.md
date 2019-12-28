@@ -14,7 +14,7 @@ step 4) For the last step it will send packets from randomly generated source IP
 For using this tool for your services, you need to install the followings:
 
 ```
-git clone https://gitlab.com/greenmns/GreenDos.git
+git clone https://github.com/greenmns/GreenDos.git
 cd GreenDos
 chmod +x GreenDos.sh
 ```
