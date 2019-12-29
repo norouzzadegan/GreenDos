@@ -22,12 +22,12 @@ you can see help
 
 ```
 $./GreenDos.sh
--h|--help show help
--p|--port select espisific port if no set scan all port
--d|--domain set your domain
--i|--ip set your ip
--f|--flood set Number of packet you want to send
--r|--range set range of port scan and format is 1-8080
+-h|--help "show help"
+-p|--port "select espisific port if no set scan all port"
+-d|--domain "set your domain"
+-i|--ip "set target ip"
+-f|--flood "set Number of packet you want to send"
+-r|--range "set range of port scan and format is 1-8080"
 usage:
 ./GreenDos.sh -d domain.com
 ```
