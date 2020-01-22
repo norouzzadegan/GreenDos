@@ -1,4 +1,4 @@
-## GreenDos a tools convert Dos to Ddos
+## GreenDos a tools convert Dos to Ddos Attacks
 This tool is developed for checking services against a DDOS attack.
  
 We will talk about the algorithm in detailed. The algorithm has 4 main steps as follow:
