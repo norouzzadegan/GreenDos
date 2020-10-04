@@ -14,6 +14,9 @@ echo "./dos.sh -d domain.com"
 
 }
 
+DOMAIN=0
+PORT=0
+RANGE=0
 
 hash masscan 2> /dev/null
 if [ $? -eq 1 ]

@@ -20,7 +20,6 @@ while loop_add < loop :
 
 
 file1 = open("/tmp/OPEN_PORT")
-file2 = open("/tmp/IP2")
 
 for port in file1:
     open_port.append(int(port))
