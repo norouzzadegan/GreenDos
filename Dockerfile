@@ -4,3 +4,7 @@ RUN apt update
 
 RUN apt install -y masscan python-scapy net-tools python3 python2.7
 
+COPY GreenDos.sh .
+COPY core.py .
+
+ENTRYPOINT [ "/bin/bash","GreenDos.sh" ]
