@@ -4,5 +4,6 @@ RUN apt install -y masscan net-tools python3 python2.7 python3-pip iputils-ping
 RUN pip3 install scapy
 COPY GreenDos.sh .
 COPY core.py .
+
 ENTRYPOINT [ "/bin/bash","GreenDos.sh" ]
 
