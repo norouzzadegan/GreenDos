@@ -18,6 +18,8 @@ if you set IP and domain Container only choose ip so don't set ip and domain wit
 
 ```Example```
 
+```docker pull greenmn/greendos```
+
 ```docker run -it greendos:test ip 192.168.18.152``` 
 
 If dont set port scan 65535 and choose open port 
