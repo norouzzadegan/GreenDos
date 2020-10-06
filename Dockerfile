@@ -5,3 +5,4 @@ RUN pip3 install scapy
 COPY GreenDos.sh .
 COPY core.py .
 ENTRYPOINT [ "/bin/bash","GreenDos.sh" ]
+
