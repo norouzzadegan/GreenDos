@@ -61,6 +61,6 @@ else
    echo $PORT > /tmp/OPEN_PORT
 fi
 
-sudo python3 core.py $FLOOD $IP
+python3 core.py $FLOOD $IP
 
 rm -rf /tmp/OPEN_PORT
