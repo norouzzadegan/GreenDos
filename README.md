@@ -1,38 +1,31 @@
-## GreenDos a tools convert Dos to Ddos Attacks
-This tool is developed for checking services against a DDOS attack.
+## GreenDos is a image convert Dos to Ddos Attacks
+
+
+This tool is developed for checking services against of DDOS attacks.
  
-We will talk about the algorithm in detailed. The algorithm has 4 main steps as follow:
+We will talk about the algorithm in detailed. The algorithm is as follow:
 
-step 1) At first, you have to enter a specific domain as input. 
- 
-step 2) It will ping the Domain that you gave to get the IP.
+GreenDos generate packet with random of source ip and source port and sequence number for a packet.
 
-step 3) By using masscan it scans all the ports in range 1 to 65535 to find the open ones.
-
-step 4) For the last step it will send packets from randomly generated source IP and port to  destination.
-
-For using this tool for your services, you need to install the followings:
+for using it you need enable ip forwarding in your Linux host.
+for example this page said about How to Disable/Enable IP forwarding in Linux:
 
 ```
-git clone https://github.com/greenmns/GreenDos.git
-cd GreenDos
-chmod +x GreenDos.sh
-```
-you can see help
-
-```
-$./GreenDos.sh
--h|--help "show help"
--p|--port "select espisific port if no set scan all port"
--d|--domain "set your domain"
--i|--ip "set target ip"
--f|--flood "set Number of packet you want to send"
--r|--range "set range of port scan and format is 1-8080"
-usage:
-./GreenDos.sh -d domain.com
+https://linuxconfig.org/how-to-turn-on-off-ip-forwarding-in-linux
 ```
 
+```How Run Container```
+For run Container you can set domain or set ip or you can set your specefic port that want to test your service.
+
+if you set IP and domain Container only choose ip so don't set ip and domain with together.
+
+```Example```
+
+```docker run -it greendos:test ip 192.168.18.152``` 
+if dont set port scan 65535 and choose open open 
 
 
+```docker run -it greendos:test domain my_test_site.example```
 
+```docker run -it greendos:test ip 192.168.18.152 port 443```
 
