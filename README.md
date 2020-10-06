@@ -22,10 +22,10 @@ if you set IP and domain Container only choose ip so don't set ip and domain wit
 ```Example```
 
 ```docker run -it greendos:test ip 192.168.18.152``` 
+
 if dont set port scan 65535 and choose open open 
 
 
 ```docker run -it greendos:test domain my_test_site.example```
 
 ```docker run -it greendos:test ip 192.168.18.152 port 443```
-
