@@ -20,10 +20,10 @@ if you set IP and domain Container only choose ip so don't set ip and domain wit
 
 ```docker pull greenmn/greendos```
 
-```docker run -it greenmn/greendos:latest ip 192.168.18.152``` 
+```docker run -it greenmn/greendos:latest ip 192.168.18.152 flood 500 ``` 
 
 If dont set port scan 65535 and choose open port 
 
-```docker run -it greenmn/greendos:latest domain my_test_site.example```
+```docker run -it greenmn/greendos:latest domain my_test_site.example flood 500```
 
-```docker run -it greenmn/greendos:latest ip 192.168.18.152 port 443```
+```docker run -it greenmn/greendos:latest ip 192.168.18.152 port 443 flood 500 ```
