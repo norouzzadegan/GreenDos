@@ -55,7 +55,7 @@ fi
 
 if [ -z $PORT ]
 then
-   PORT=`masscan -p1-65535 $IP  --wait=10 --rate=10000  `
+   PORT=`masscan -p1-65535 $IP  --wait=10 --rate=10000 -vvvvv `
    echo $PORT | grep Discovered | sed 's/Discovered/\n/gi'| grep open | awk '{print $3}'| tr -d "/tcp" | tr -d " " > /tmp/OPEN_PORT
 else
    echo $PORT > /tmp/OPEN_PORT
