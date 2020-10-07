@@ -61,6 +61,11 @@ else
    echo $PORT > /tmp/OPEN_PORT
 fi
 
+if ! [ -f /tmp/OPEN_PORT ]
+then
+   exit 1
+fi 
+
 python3 core.py $FLOOD $IP
 
 rm -rf /tmp/OPEN_PORT
